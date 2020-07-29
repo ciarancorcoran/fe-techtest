@@ -17,9 +17,7 @@ const handleNumberButtonClick = (e, numbersArray) => {
       return
     }
 
-    if (idToHighlight.classList.contains('highlight')) {
-      idToHighlight.classList.remove('highlight')
-    }
+    if (idToHighlight.classList.contains('highlight')) idToHighlight.classList.remove('highlight')
   })
 }
 
