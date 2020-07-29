@@ -1,8 +1,6 @@
 import { checkNumberIsMultiple } from '../utils/checkNumberIsMultiple'
 import './NumberButtonGrid.css';
 
-
-
 const NumberButtonGrid = (max) => {
 
   const handleNumberButtonClick = (e, numbersArray) => {
