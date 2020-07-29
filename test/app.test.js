@@ -1,17 +1,19 @@
 import app from '../src/app'
 
+const range = 6
+
 describe('app', function() {
   beforeEach(() => {
-    app(144)
+    app(range)
   })
 
   afterEach(() => {
-    document.body.innerHTML = ''
+    document.getElementsByTagName('html').innerHTML = ''
   })
 
   it ('returns html with a main element containing buttons up to a certain number', function() {
     const mainElement = document.querySelector('main')
-    expect(mainElement.childElementCount).toBe(144);
+    expect(mainElement.childElementCount).toBe(range);
   })
 
   it ('clicks on a button and adds a highlight class to multiples', function() {

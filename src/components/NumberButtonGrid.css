@@ -1,6 +1,12 @@
+:root {
+  --box-shadow-color: rgba(31, 19, 190, 0.6);
+}
+
 main {
   display: grid;
   grid-template-columns: 12fr;
+  max-width: 1220px;
+  margin: 0 auto;
 }
 
 main button {
@@ -10,23 +16,19 @@ main button {
 }
 
 main button.highlight {
-  -moz-box-shadow: inset 3px 0px 17px 8px rgba(31, 19, 190, 0.6);
-  -webkit-box-shadow: inset 3px 0px 17px 8px rgba(31, 19, 190, 0.6);
-  box-shadow: inset 3px 0px 17px 8px rgba(31, 19, 190, 0.6);
+  -moz-box-shadow: inset 3px 0px 17px 8px var(--box-shadow-color);
+  -webkit-box-shadow: inset 3px 0px 17px 8px var(--box-shadow-color);
+  box-shadow: inset 3px 0px 17px 8px var(--box-shadow-color);
 }
 
-@media screen and (min-width: 768px) {
-  main {
-    grid-template-columns: 50% 50%;
-  }
-}
-
+/* Tablet */
 @media screen and (min-width: 1024px) {
   main {
     grid-template-columns: 6fr 6fr;
   }
 }
 
+/* Desktop */
 @media screen and (min-width: 1224px) {
   main {
     grid-template-columns: 4fr 4fr 4fr;
